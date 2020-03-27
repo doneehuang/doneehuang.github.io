@@ -29,6 +29,15 @@ var $=jQuery;$(function(){$("#nav-btn").click(function(){$('#nav-menu').toggleCl
 $('.more').on('click',function(){event.preventDefault();var dest=0;if($(this.hash).offset().top>$(document).height()-$(window).height()){dest=$(document).height()-$(window).height();}else{dest=$(this.hash).offset().top;}
 $('html,body').animate({scrollTop:dest},1500,'swing');})})
 </script>	
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZX0YKTHJY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HZX0YKTHJY');
+</script>	
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
