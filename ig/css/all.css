@@ -132,6 +132,14 @@ section {
     visibility: visible
 }
 
-
-
-/*# sourceMappingURL=demo-style.min.css.map */
+/*RWD*/
+@media (max-width: 768px){
+	.playground .post {
+		width: 49%;
+	}	
+}
+@media (max-width: 320px){
+.playground .post .meta .stats .likes {
+    margin: 0 10px 0 0;
+}	
+}
