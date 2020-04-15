@@ -1,0 +1,150 @@
+@charset "UTF-8";
+a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+#cartIcon, .analyticsList__resultBox, .bannerSlider, .bannerVerticalList, .centerBox, .centerChildBox, .centerFormBox, .circleIconButton, .deskBannerButton, .dragUploadButton, .dropActiveBack, .dropIconContent, .emptyCartText, .fileUploaderBox, .foo__container, .leftArrow, .m__foo__container .m__foo__social .m__foo__social__icons a, .m__foo__messenger, .m__home__categories li a, .m__nav__logo, .m__nav__logo a, .m__nav__pageTitle, .mediumFunctionButton, .mobileBannerButton, .mobileList__quantityBox button, .mobileList ul .mobileList__profileOrderList, .moreDots, .moreDotsButton, .moreDotsContainer, .nav__container, .nav__left ul li a, .nav__right ul li a, .progressOverlay, .rightArrow, .statusDot, .storyInfo, .storyMoreButton, .switchButtonBox, .upload__cover, .upload__singleCover, .uploadFile__selectButtonBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility!important;
+    -webkit-font-smoothing: antialiased!important;
+}
+.active{
+	display: none!important;
+}
+.story_01{
+    display: grid;
+    position: fixed;
+    top: 0em;
+}
+.story_top{
+	position: relative;
+	background: linear-gradient(rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+}
+.storyCloseButton{
+	z-index: 99;
+	position: absolute;
+    top: 55px;
+    right: 10px;
+	color: #fff;
+	font-size: 1.5rem;
+}
+.circle_name{
+    position: absolute;
+    top: 58px;
+    left: 90px;
+	font-size: 0.9rem;
+	color: #fff;
+    display: inline-block;
+}
+.circle_icon{
+	position: absolute;
+    top: 40px;
+    left: 15px;
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50%;
+    background-color: #f5f5f5;
+    border: 1.5px solid #fff;
+}
+
+
+/* CSS Document */
+.m__home__categories {
+	z-index: 5000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+.m__home__categories {
+    padding: 60px 18px 13px 8px;
+    min-width: 100%;
+    background-color: #fff;
+    width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.m__home__categories li {
+	list-style: none;
+    width: 80px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.m__home__categories li a {
+    font-size: 13px;
+    color: #000;
+    margin-right: 20px;
+    width: 100%;
+    border-radius: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 0 4px;
+}
+.m__home__categories li a .circleBackCategory {
+    position: relative;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: linear-gradient(45deg,#f0984e,#c12e7f);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.m__home__categories li a .circleCategory {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 50%;
+    background-color: #f5f5f5;
+    border: 1.5px solid #fff;
+}
+.m__home__categories li a .home__categoryName {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 15px;
+}
