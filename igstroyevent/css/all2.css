@@ -24,6 +24,9 @@ a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body,
     text-rendering: optimizeLegibility!important;
     -webkit-font-smoothing: antialiased!important;
 }
+#app{
+	position: fixed;
+}
 .active{
 	display: none!important;
 }
@@ -39,7 +42,7 @@ a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body,
 .storyCloseButton{
 	z-index: 99;
 	position: absolute;
-    top: 55px;
+    top: -105px;
     right: 10px;
 	color: #fff;
 	font-size: 1.5rem;
