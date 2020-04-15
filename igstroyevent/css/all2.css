@@ -40,7 +40,7 @@ a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body,
 	background: linear-gradient(rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
 }
 .storyCloseButton{
-	z-index: 99;
+	z-index: 5000;
 	position: absolute;
     top: -105px;
     right: 10px;

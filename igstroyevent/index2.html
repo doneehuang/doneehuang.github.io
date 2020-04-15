@@ -138,7 +138,7 @@ nav > div > div{
 <div></div>
 </div>
 </nav>
-	
+<div class="storyCloseButton"><i class="fal fa-times"></i></div>		
 <section class="story_01" v-for="(bgimg, index) in bgs" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center'  }" v-if="current == index">
 	
 	<div class="story_top">
@@ -150,7 +150,6 @@ nav > div > div{
 		
 	</div>
 </section>
-<button class="storyCloseButton"><i class="fal fa-times"></i></button>	
 </main>
 	
 <script>
