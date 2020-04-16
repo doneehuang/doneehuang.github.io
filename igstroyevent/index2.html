@@ -136,7 +136,7 @@ nav > div > div{
 	
 	
 <main id="app" class="story1 active">
-<div class="storyCloseButton"><i class="fal fa-times"></i></div>		
+<div class="storyCloseButton"><i class="fa fa-times"></i></div>		
 <nav>
 <div v-for="(bgimg, index) in bgs">
 <div></div>
@@ -222,9 +222,6 @@ const app = new Vue({
           timeline.pause();
           timeline.seek(this.current * 10000);
           timeline.play();
-			    $(".storyCloseButton").click(function() {
-        $('.story1').addClass('active');
-    });
         }
       } else {
         if (this.current > 0) {
@@ -233,9 +230,6 @@ const app = new Vue({
           timeline.pause();
           timeline.seek(this.current * 10000);
           timeline.play();
-			    $(".storyCloseButton").click(function() {
-        $('.story1').addClass('active');
-    });
         }
       }
     });
