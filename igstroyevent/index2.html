@@ -167,6 +167,9 @@ nav > div > div{
 <script>
 var $ = jQuery;	
 $(function() {		
+    $(".storyCloseButton").click(function() {
+        $('.story1').addClass('active');
+    });
 	$(".circleBackCategory").click(function() {
         $('.story1').removeClass('active');
     });

@@ -42,8 +42,11 @@ a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body,
 	z-index: 5000;
 	position: absolute;
     top: -105px;
-    right: 10px;
+	width: 60px;
+	height: 60px;
+    right: -10px;
 	color: #fff;
+	border: 1px solid #000;
 	font-size: 1.5rem;
 }
 .circle_name{
