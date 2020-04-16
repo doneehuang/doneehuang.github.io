@@ -152,6 +152,7 @@ nav > div > div{
 		</a>
 		
 	</div>
+	
 </section>
 </main>
 	
@@ -201,12 +202,7 @@ const app = new Vue({
           this.current = index;
         } });
 
-    });
-    this.dates.forEach((date, index) => {
-      timeline.add({
-        width: '100%', });
-
-    });	  
+    });  
 
     let hammertime = new Hammer(document.querySelector('#app'));
 
