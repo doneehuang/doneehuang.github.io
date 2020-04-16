@@ -167,9 +167,6 @@ nav > div > div{
 <script>
 var $ = jQuery;	
 $(function() {		
-    $(".storyCloseButton").click(function() {
-        $('.story1').addClass('active');
-    });
 	$(".circleBackCategory").click(function() {
         $('.story1').removeClass('active');
     });
@@ -206,6 +203,11 @@ const app = new Vue({
 
     let hammertime = new Hammer(document.querySelector('#app'));
 
+    hammertime.on('Swipeup', e => {
+       $('.story1').addClass('active');
+    });
+	  
+	  
     hammertime.on('press', e => {
       timeline.pause();
     });
@@ -218,7 +220,6 @@ const app = new Vue({
       if (e.center.x > window.innerWidth / 2) {
         if (this.current < this.bgs.length - 1) {
           this.current += 1;
-
           timeline.pause();
           timeline.seek(this.current * 10000);
           timeline.play();
@@ -226,25 +227,12 @@ const app = new Vue({
       } else {
         if (this.current > 0) {
           this.current -= 1;
-
           timeline.pause();
           timeline.seek(this.current * 10000);
           timeline.play();
         }
       }
     });
-	  
-    hammertime.on('tap', e => {
-      if (e.center.x > window.innerWidth / 2) {
-        if (this.current < this.bgs.length - 1) {
-              $(".storyCloseButton").click(function() {
-        $('.story1').addClass('active');
-    });
-        }
-      } 
-    });	  
-	  
-	  
   } });
     </script>
 </body>
