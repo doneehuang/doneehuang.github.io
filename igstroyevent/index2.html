@@ -59,6 +59,9 @@ nav > div > div{
     position: fixed;
     z-index: 5;
 }	
+.story1{
+		background-color: #fff;
+	}	
 </style>
 <script>
   window.console = window.console || function(t) {};
@@ -133,12 +136,12 @@ nav > div > div{
 	
 	
 <main id="app" class="story1 active">
+<div class="storyCloseButton"><i class="fal fa-times"></i></div>		
 <nav>
 <div v-for="(bgimg, index) in bgs">
 <div></div>
 </div>
-</nav>
-<div class="storyCloseButton"><i class="fal fa-times"></i></div>		
+</nav>	
 <section class="story_01" v-for="(bgimg, index) in bgs" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center'  }" v-if="current == index">
 	
 	<div class="story_top">
