@@ -188,7 +188,7 @@ const app = new Vue({
   },
   mounted() {
     let timeline = anime.timeline({
-      autoplay: true,
+      autoplay: false,
       duration: 10000,
       easing: 'linear',
       loop: true });
@@ -222,6 +222,9 @@ const app = new Vue({
           timeline.pause();
           timeline.seek(this.current * 10000);
           timeline.play();
+			    $(".storyCloseButton").click(function() {
+        $('.story1').addClass('active');
+    });
         }
       } else {
         if (this.current > 0) {
@@ -230,6 +233,9 @@ const app = new Vue({
           timeline.pause();
           timeline.seek(this.current * 10000);
           timeline.play();
+			    $(".storyCloseButton").click(function() {
+        $('.story1').addClass('active');
+    });
         }
       }
     });
