@@ -218,7 +218,7 @@ const app = new Vue({
       timeline.play();
     });
 
-    hammertime.on('tap', e => {
+    hammertime.on('Press', e => {
       if (e.center.x > window.innerWidth / 2) {
         if (this.current < this.bgs.length - 1) {
           this.current += 1;
