@@ -203,9 +203,11 @@ const app = new Vue({
 
     let hammertime = new Hammer(document.querySelector('#app'));
 
-    hammertime.on('Swipeup', e => {
-       $('.story1').addClass('active');
+        hammertime.on("tap", function (e) {
+            	$(".storyCloseButton").click(function() {
+        $('.story1').addClass('active');
     });
+        });
 	  
 	  
     hammertime.on('press', e => {
