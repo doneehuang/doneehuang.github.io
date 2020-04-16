@@ -185,7 +185,7 @@ const app = new Vue({
   },
   mounted() {
     let timeline = anime.timeline({
-      autoplay: false,
+      autoplay: true,
       duration: 10000,
       easing: 'linear',
       loop: true });
@@ -218,15 +218,18 @@ const app = new Vue({
       timeline.play();
     });
 
-    hammertime.on('Press', e => {
+    hammertime.on('tap', e => {
       if (e.center.x > window.innerWidth / 2) {
+		  if (e.center.y > window.innerHeight / 6) {
         if (this.current < this.bgs.length - 1) {
           this.current += 1;
           timeline.pause();
           timeline.seek(this.current * 10000);
           timeline.play();
         }
-      } else {
+			  }
+      } 
+		else {
         if (this.current > 0) {
           this.current -= 1;
           timeline.pause();
