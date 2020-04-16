@@ -1,160 +1,177 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
-<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-<meta name="apple-mobile-web-app-title" content="CodePen">
-<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-<title>CodePen - Instagram Story Auto Play UX in Vue.js using Anime.js and Hammer.js</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>text</title>
 <link rel="stylesheet" href="css/all2.css">	
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
-	
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.3/vue.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/141041/anime.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>	
-	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>		
 	
 	
 <style>
-html, body, main, section{
-  height: 100%;
-  width: 100%;
-}
-
-nav{
+.nav1{
   z-index: 1000;
   box-sizing: border-box;
   display: grid;
-  grid-column-gap: 1em;
+  grid-column-gap: 0.3em;
   grid-template-columns: repeat(5, 1fr);
   height: 0.5em;
   padding: 0 1em;
   position: fixed;
   top: 1em;
   width: 100%;
-}
-
-nav > div{
-  background: rgba(0,0,0,0.1);
-  height: 30%;
-}
-
-nav > div > div{
-  background: #fff;
-  height: 100%;
-  width: 0%;
-}
-/*icon大頭貼*/
-.story_top {
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    z-index: 5;
 }	
-.story1{
-		background-color: #fff;
-	}	
+.nav2{
+  z-index: 1000;
+  box-sizing: border-box;
+  display: grid;
+  grid-column-gap: 0.3em;
+  grid-template-columns: repeat(4, 1fr);
+  height: 0.5em;
+  padding: 0 1em;
+  position: fixed;
+  top: 1em;
+  width: 100%;
+}		
 </style>
 <script>
   window.console = window.console || function(t) {};
-</script>
-<script>
   if (document.location.search.match(/type=embed/gi)) {
     window.parent.postMessage("resize", "*");
   }
 </script>
+	
+	
+	
 </head>
-<body translate="no">
+	
+<body>
 	
 	
-<ul id="m__homeCategory" class="m__home__categories">
+<ul id="storyhome" class="story_home">
     <li>
-		<a href="#" class="btn_01">
-			<span class="circleBackCategory">
-				<span class="circleCategory" style="background-image: url(https://cdn.quickper.com/media/q1/product/ac051f34-34b2-42c3-843f-e84bd38c48ef/w800h1200t1.jpg);">
+		<a href="#" class="stroy_btn1">
+			<span class="story_icon_circleback">
+				<span class="story_icon_circle" style="background-image: url(https://cdn.quickper.com/media/q1/product/ac051f34-34b2-42c3-843f-e84bd38c48ef/w800h1200t1.jpg);">
 				</span>
 			</span> <!----> 
-			<span class="home__categoryName">飾品</span>
+			<span class="stroy_name">飾品</span>
+		</a>
+	</li>
+    <li>
+		<a href="#"  class="stroy_btn2">
+			<span class="story_icon_circleback">
+				<span class="story_icon_circle" style="background-image: url(https://cdn.quickper.com/media/q1/product/83db6fd6-0acb-4990-8cbe-7218be43b365/w90h135t1.jpg);">
+				</span>
+			</span> <!----> 
+			<span class="stroy_name">鞋</span>
+		</a></li>
+    <li>
+		<a href="#">
+			<span class="story_icon_circleback">
+				<span class="story_icon_circle" style="background-image: url(https://cdn.quickper.com/media/q1/product/3b963a5b-139f-409d-8244-ede1243ffdd7/w800h1200t1.jpg);"></span>
+			</span> <!----> 
+			<span class="stroy_name">包</span>
 		</a>
 	</li>
     <li>
 		<a href="#">
-			<span class="circleBackCategory">
-				<span class="circleCategory" style="background-image: url(https://cdn.quickper.com/media/q1/product/83db6fd6-0acb-4990-8cbe-7218be43b365/w90h135t1.jpg);">
+			<span class="story_icon_circleback">
+				<span class="story_icon_circle" style="background-image: url(https://cdn.quickper.com/media/q1/product/2bc62754-efd2-4eee-b298-8c8b5d51b0c0/w800h1200t1.jpg);">
 				</span>
 			</span> <!----> 
-			<span class="home__categoryName">鞋</span>
+			<span class="stroy_name">連帽衫</span>
 		</a></li>
     <li>
 		<a href="#">
-			<span class="circleBackCategory">
-				<span class="circleCategory" style="background-image: url(https://cdn.quickper.com/media/q1/product/3b963a5b-139f-409d-8244-ede1243ffdd7/w800h1200t1.jpg);"></span>
-			</span> <!----> 
-			<span class="home__categoryName">包</span>
-		</a>
-	</li>
-    <li>
-		<a href="#">
-			<span class="circleBackCategory">
-				<span class="circleCategory" style="background-image: url(https://cdn.quickper.com/media/q1/product/2bc62754-efd2-4eee-b298-8c8b5d51b0c0/w800h1200t1.jpg);">
+			<span class="story_icon_circleback">
+				<span class="story_icon_circle" style="background-image: url(https://cdn.quickper.com/media/q1/product/07f1ba61-cc64-4dfa-90d3-454157a2e852/w800h1200t1.jpg);">
 				</span>
 			</span> <!----> 
-			<span class="home__categoryName">連帽衫</span>
+			<span class="stroy_name">上衣</span>
 		</a></li>
     <li>
 		<a href="#">
-			<span class="circleBackCategory">
-				<span class="circleCategory" style="background-image: url(https://cdn.quickper.com/media/q1/product/07f1ba61-cc64-4dfa-90d3-454157a2e852/w800h1200t1.jpg);">
-				</span>
+			<span class="story_icon_circleback">
+				<span class="story_icon_circle" style="background-image: url(https://cdn.quickper.com/media/q1/product/b4c94cdc-a43d-46d6-8155-639f0572b3cb/w800h1200t1.jpg);"></span>
 			</span> <!----> 
-			<span class="home__categoryName">上衣</span>
+			<span class="stroy_name">外套</span>
 		</a></li>
     <li>
 		<a href="#">
-			<span class="circleBackCategory">
-				<span class="circleCategory" style="background-image: url(https://cdn.quickper.com/media/q1/product/b4c94cdc-a43d-46d6-8155-639f0572b3cb/w800h1200t1.jpg);"></span>
-			</span> <!----> 
-			<span class="home__categoryName">外套 | 大衣</span>
-		</a></li>
-    <li>
-		<a href="#">
-			<span class="circleBackCategory">
-				<span class="circleCategory" style="background-image: url(https://cdn.quickper.com/media/q1/product/ef15a811-b0dc-445c-ae24-46ee4d01bdae/w800h1200t1.jpg);">
+			<span class="story_icon_circleback">
+				<span class="story_icon_circle" style="background-image: url(https://cdn.quickper.com/media/q1/product/ef15a811-b0dc-445c-ae24-46ee4d01bdae/w800h1200t1.jpg);">
 				</span>
 			</span> <!----> 
-			<span class="home__categoryName">裙子</span>
+			<span class="stroy_name">裙子</span>
 		</a></li>
 </ul>	
 	
+
+	<main id="app" class="story1 active">
+		<div class="storyCloseButton"><i class="fal fa-times"></i></div>		
+			<nav class="nav1">
+				<div v-for="(bgimg, index) in bgs">
+				<div></div>
+				</div>
+			</nav>	
+		<section class="story_01" v-for="(bgimg, index) in bgs" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center','background-color': '#fff'  }" v-if="current == index">
+
+			<div class="story_top">
+				<a href="" class="">
+						<span class="circle_icon" style="background-image: url(https://cdn.quickper.com/media/q1/product/ac051f34-34b2-42c3-843f-e84bd38c48ef/w800h1200t1.jpg);">
+						</span>
+						<span v-for="(date, index) in dates" class="circle_name" v-if="current == index">飾品 {{date}}</span>
+				</a>
+
+			</div>
+			<div class="story_bottom">
+				<div class="story_bottom_info">
+					<div class="story_bottom_info_name" v-for="(name, index) in names" v-if="current == index">
+						{{name}}
+					</div>
+					<div class="story_bottom_info_price">
+						<span class="price" v-for="(price, index) in prices" v-if="current == index">
+										{{price}}
+						</span>	
+					</div>
+				</div>
+				<div class="story_bottom_Button">
+					<a v-for="(link, index) in links" v-if="current == index" :href="link" target="_blank">
+									查看更多 <i class="fal fa-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+			
+
+		</section>
+	</main>
 	
-<main id="app" class="story1 active">
-<div class="storyCloseButton"><i class="fal fa-times"></i></div>		
-<nav>
-<div v-for="(bgimg, index) in bgs">
-<div></div>
-</div>
-</nav>	
-<section class="story_01" v-for="(bgimg, index) in bgs" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center'  }" v-if="current == index">
-	
-	<div class="story_top">
-		<a href="{{/new-products/6/飾品?parentId=0}}" class="">
-				<span class="circle_icon" style="background-image: url(https://cdn.quickper.com/media/q1/product/ac051f34-34b2-42c3-843f-e84bd38c48ef/w800h1200t1.jpg);">
-			    </span>
-			    <span v-for="(date, index) in dates" class="circle_name" v-if="current == index">飾品 {{date}}</span>
-		</a>
-		
-	</div>
-	
-</section>
-</main>
+	<main id="app2" class="story2 active">
+		<div class="storyCloseButton"><i class="fal fa-times"></i></div>		
+			<nav  class="nav2">
+				<div v-for="(bgimg, index) in bgs2">
+				<div></div>
+				</div>
+			</nav>	
+		<section class="story_02" v-for="(bgimg, index) in bgs2" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center','background-color': '#fff'  }" v-if="current == index">
+
+			<div class="story_top">
+				<a href="" class="">
+						<span class="circle_icon" style="background-image: url(https://cdn.quickper.com/media/q1/product/83db6fd6-0acb-4990-8cbe-7218be43b365/w90h135t1.jpg);">
+						</span>
+						<span v-for="(date, index) in dates2" class="circle_name" v-if="current == index">鞋子 {{date}}</span>
+				</a>
+
+			</div>
+
+		</section>
+	</main>	
 	
 <script>
 
@@ -167,19 +184,23 @@ nav > div > div{
 <script>
 var $ = jQuery;	
 $(function() {		
-	$(".circleBackCategory").click(function() {
+	$(".stroy_btn1").click(function() {
         $('.story1').removeClass('active');
     });
+	$(".stroy_btn2").click(function() {
+        $('.story2').removeClass('active');
+    });	
 });		
-	
+		
 const app = new Vue({
   el: '#app',
   data() {
     return {
       bgs: ['https://cdn.quickper.com/media/q1/product/3ab63175-fe7b-4979-a02b-1f77d89beab6/w800h1200t1.jpg', 'https://cdn.quickper.com/media/q1/product/bf3e2592-cf06-44f0-bb20-be816f4b3b87/w800h1200t1.jpg', 'https://cdn.quickper.com/media/q1/product/1ba87a5c-2bbb-472f-b9d8-70b417f3e250/w800h1200t1.jpg', 'https://cdn.quickper.com/media/q1/product/feae7777-9373-4623-9372-61281bb873c7/w800h1200t1.jpg', 'https://cdn.quickper.com/media/q1/product/b961b299-9b32-4314-ae43-0068c101482d/w800h1200t1.jpg'],
-	  dates:['2天前','1天前','20小時前','1小時前','2分鐘前'
-		  
-	  ],
+	  dates:['2天前','1天前','20小時前','1小時前','2分鐘前'],
+	  names:['帽子','頭巾','髮夾','髮夾2','耳環'],
+	  prices:['NT$ 990','NT$ 590','NT$ 150','NT$ 200','NT$ 390'],
+	  links: ['https://cdn.quickper.com/media/q1/product/3ab63175-fe7b-4979-a02b-1f77d89beab6/w800h1200t1.jpg', 'https://cdn.quickper.com/media/q1/product/bf3e2592-cf06-44f0-bb20-be816f4b3b87/w800h1200t1.jpg', 'https://cdn.quickper.com/media/q1/product/1ba87a5c-2bbb-472f-b9d8-70b417f3e250/w800h1200t1.jpg', 'https://cdn.quickper.com/media/q1/product/feae7777-9373-4623-9372-61281bb873c7/w800h1200t1.jpg', 'https://cdn.quickper.com/media/q1/product/b961b299-9b32-4314-ae43-0068c101482d/w800h1200t1.jpg'],
       current: 0 };
 
   },
@@ -190,10 +211,10 @@ const app = new Vue({
       easing: 'linear',
       loop: true });
 
-
+                      
     this.bgs.forEach((bgimg, index) => {
       timeline.add({
-        targets: document.querySelectorAll('nav > div')[index].children[0],
+        targets: document.querySelectorAll('.nav1 > div')[index].children[0],
         width: '100%',
         changeBegin: a => {
           this.current = index;
@@ -207,7 +228,87 @@ const app = new Vue({
             	$(".storyCloseButton").click(function() {
         $('.story1').addClass('active');
     });
-        });
+        });	  
+	  
+	  
+	  
+	  
+    hammertime.on('press', e => {
+      timeline.pause();
+    });
+
+    hammertime.on('pressup', e => {
+      timeline.play();
+    });
+
+    hammertime.on('tap', e => {
+		
+	 if (e.center.y < window.innerHeight - 100) {	
+		
+      if (e.center.x > window.innerWidth / 2) {
+		  	 if (e.center.y > window.innerHeight/6) {
+		  
+        if (this.current < this.bgs.length - 1) {
+          this.current += 1;
+          timeline.pause();
+          timeline.seek(this.current * 10000);
+          timeline.play();
+        }
+		}	  
+      } 
+		else {
+        if (this.current > 0) {
+          this.current -= 1;
+          timeline.pause();
+          timeline.seek(this.current * 10000);
+          timeline.play();
+        }
+      }
+		 }
+		 
+    });
+  } });
+	
+	
+	
+const app2 = new Vue({
+  el: '#app2',
+  data() {
+    return {
+      bgs2: ['https://cdn.quickper.com/media/q1/product/83db6fd6-0acb-4990-8cbe-7218be43b365/w800h1200t1.jpg', 'https://cdn.quickper.com/media/q1/product/8654cf5b-b091-4bff-9cc4-1021340596cf/w800h1200t1.jpg', 'https://cdn.quickper.com/media/q1/product/9f2bf683-11ed-4693-876a-a041c93a154d/w800h1200t1.jpg', 'https://cdn.quickper.com/media/q1/product/a0f0ef42-2b90-41a1-8d16-7588a4460024/w800h1200t1.jpg'],
+	  dates2:['10天前','5天前','10小時前','1小時前'
+		  
+	  ],
+      current: 0 };
+
+  },
+  mounted() {
+    let timeline = anime.timeline({
+      autoplay: true,
+      duration: 10000,
+      easing: 'linear',
+      loop: true });
+
+
+    this.bgs2.forEach((bgimg, index) => {
+      timeline.add({
+        targets: document.querySelectorAll('.nav2 > div')[index].children[0],
+        width: '100%',
+        changeBegin: a => {
+          this.current = index;
+        } });
+
+    });  
+
+    let hammertime = new Hammer(document.querySelector('#app2'));
+
+        hammertime.on("tap", function (e) {
+            	$(".storyCloseButton").click(function() {
+        $('.story2').addClass('active');
+    });
+        });	  
+	  
+	  
 	  
 	  
     hammertime.on('press', e => {
@@ -220,8 +321,8 @@ const app = new Vue({
 
     hammertime.on('tap', e => {
       if (e.center.x > window.innerWidth / 2) {
-		  if (e.center.y > window.innerHeight / 6) {
-        if (this.current < this.bgs.length - 1) {
+		  if (e.center.y > window.innerHeight / 10) {
+        if (this.current < this.bgs2.length - 1) {
           this.current += 1;
           timeline.pause();
           timeline.seek(this.current * 10000);
@@ -238,7 +339,10 @@ const app = new Vue({
         }
       }
     });
-  } });
+  } });		
+	
+	
+	
     </script>
 </body>
 </html>
