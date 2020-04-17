@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .lazyloading {
     opacity: 1;
-    background-size: 50%!important;
     background: url(//doneehuang.github.io/igstroy/img/Spinner-1s-200px.gif) no-repeat center;
 }
 
