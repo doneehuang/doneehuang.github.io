@@ -152,7 +152,17 @@ $(document).ready(function () {
         "prod_id": "37210",
         "image": "campaign_1312/20200417022919_FxvNQ/png"
       }
-    }
+    },
+   "SunnyHills": {
+      "土鳳梨酥": {
+        "prod_id": "38855",
+        "image": "product_38855/20200326042823_7aTD8/jpg"
+      },
+      "蜜豐糖脆蛋糕": {
+        "prod_id": "38855",
+        "image": "product_38855/20200326042837_Q6CwU/jpg"
+      }
+    },	  
   };
 
 
