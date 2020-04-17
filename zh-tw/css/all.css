@@ -1408,6 +1408,9 @@ margin-bottom: 0;
   /* border-top: 1px solid #e5e5e5; */
 }
 /* footer */
+footer ul.sns li a img {
+    width: 19px;
+}
 footer .pull-right {
   float: right !important;
 }
