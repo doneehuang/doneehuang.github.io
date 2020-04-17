@@ -11,7 +11,8 @@
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/141041/anime.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>		
-	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/plugins/bgset/ls.bgset.min.js"></script>	
 	
 <style>
 .nav1{
@@ -114,7 +115,7 @@
 				<div></div>
 				</div>
 			</nav>	
-		<section class="story_01" v-for="(bgimg, index) in bgs" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center','background-color': '#fff'  }" v-if="current == index">
+		<section class="story_01 lazyloading" v-for="(bgimg, index) in bgs" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center','background-color': '#f1f2f3'  }" v-if="current == index">
 
 			<div class="story_top">
 				<a href="" class="">
@@ -153,7 +154,7 @@
 				<div></div>
 				</div>
 			</nav>	
-		<section class="story_02" v-for="(bgimg, index) in bgs2" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center','background-color': '#fff'  }" v-if="current == index">
+		<section  class="story_02 lazyloading" v-for="(bgimg, index) in bgs2" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center','background-color': '#fff'  }" v-if="current == index">
 
 			<div class="story_top">
 				<a href="" class="">
@@ -166,7 +167,7 @@
 
 		</section>
 	</main>	
-	<script src="js/all.js"></script>
-	
 </body>
+	<script src="js/all.js"></script>
+
 </html>
