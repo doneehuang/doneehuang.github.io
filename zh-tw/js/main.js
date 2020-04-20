@@ -156,13 +156,45 @@ $(document).ready(function () {
    "SunnyHills": {
       "土鳳梨酥": {
         "prod_id": "38855",
-        "image": "product_38855/20200326042823_7aTD8/jpg"
+        "image": "campaign_1237/20200420044045_3KqeQ/jpg"
       },
       "蜜豐糖脆蛋糕": {
         "prod_id": "38855",
-        "image": "product_38855/20200326042837_Q6CwU/jpg"
+        "image": "campaign_1237/20200420044623_KDIg5/jpg"
       }
-    },	  
+    },	 
+   "SunnyGoGo": {
+      "台灣水果乾": {
+        "prod_id": "21788",
+        "image": "campaign_1237/20200420050416_10Qgg/jpg"
+      },
+      "台灣芒果乾": {
+        "prod_id": "21788",
+        "image": "campaign_1237/20200420051303_voxrB/jpg"
+      },
+      "台灣情人果乾": {
+        "prod_id": "21788",
+        "image": "campaign_1237/20200420051303_d7TVU/jpg"
+      },
+      "愛文芒果酥": {
+        "prod_id": "21788",
+        "image": "campaign_1237/20200420051303_GZhkG/jpg"
+      },  
+      "愛文芒果乾牛軋糖": {
+        "prod_id": "21788",
+        "image": "campaign_1237/20200420051303_zN4rZ/jpg"
+      },   	   
+    },	 
+   "Holiji": {
+      "黑糖老薑手工黑糖磚": {
+        "prod_id": "21785",
+        "image": "campaign_1237/20200420052835_QrkWq/jpg"
+      },
+      "紅棗桂圓手工黑糖磚": {
+        "prod_id": "21785",
+        "image": "campaign_1237/20200420053758_FNhxv/jpg"
+      },  	   
+    },		  
   };
 
 
