@@ -66,7 +66,7 @@
   }
   #mainNav.navbar-shrink .nav-link {
     color: #2E2E4C;
-    padding: 1rem 1.25rem;
+    padding: 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
@@ -88,7 +88,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(30, 39, 70, 0.1) 0%, rgba(30, 39, 70, 0.5) 75%, #2E2E4C 100%), url("../img/bg.jpg");
+  background: linear-gradient(to bottom, rgba(30, 39, 70, 0.1) 0%, rgba(30, 39, 70, 0.5) 75%, #2E2E4C 100%), url("../img/bg1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -135,7 +135,7 @@
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
+  padding: 0.7rem 2rem;
   font-family: 'Varela Round';
   font-size: 80%;
   text-transform: uppercase;
@@ -664,12 +664,27 @@ footer ul.sns li a {
 .baguetteBox-button#previous-button {
     outline: none;
 	background-color: transparent;
+	z-index: 99;
 }
 .baguetteBox-button#next-button {
 	background-color: transparent;
+	z-index: 99;
     outline: none;
 }
 .baguetteBox-button#close-button {
 	background-color: transparent;
     outline: none;
 }
+@media (max-width:768px){
+	 h4 {
+    font-size: 1.2rem;
+}
+		#baguetteBox-overlay .full-image img{
+				max-width: 90%!important;
+		
+	}
+}
+#baguetteBox-overlay .full-image img{
+			box-shadow: 0 0 8px rgba(0,0,0,0)!important;
+		
+	}
