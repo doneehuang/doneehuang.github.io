@@ -154,7 +154,13 @@
 .btn-primary:not(:disabled):not(.disabled):active {
   background-color: #D1BCB8;
 }
-
+.btn-info{
+	background-color: #9A8C98;
+    padding: 0.7rem 1rem;
+}
+.btn-info:hover{
+	background-color: #C9ADA7;
+}
 .about-section {
   padding-top: 5rem;
   background: linear-gradient(to bottom, #2E2E4C 0%, #4A4E69);
