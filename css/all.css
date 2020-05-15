@@ -119,14 +119,7 @@
 }
 .button_style{
 	right: 32%!important;
-}
-.app_bg_style{
-	background:rgba(0,0,0,.8);
-	width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0em;
-}		
+}	
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
@@ -778,7 +771,16 @@ button{
 outline: none!important;
 }
 
-
+.bg_style{
+	background-image: url('img/loading.jpg');
+}
+.app_bg_style{
+	background:rgba(0,0,0,.8);
+	width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0em;
+}	
 
 
 

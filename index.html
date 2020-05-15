@@ -91,18 +91,7 @@ var $=jQuery;$(function(){$("#nav-btn").click(function(){$('#nav-menu').toggleCl
 </nav>
 
 <div class="app_bg_style">
-<section class="story_01 app_style" v-for="(bgimg, index) in bgs" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center','height': '100%' }" v-if="current == index">
-	
-<!--
-	<div class="story_top app_style">
-		<a href="{{/new-products/6/飾品?parentId=0}}" class="">
-				<span class="circle_icon" style="background-image: url(https://cdn.quickper.com/media/q1/product/ac051f34-34b2-42c3-843f-e84bd38c48ef/w800h1200t1.jpg);">
-			    </span>
-			    <span v-for="(date, index) in dates" class="circle_name" v-if="current == index">飾品 {{date}}</span>
-		</a>
-		
-	</div>
--->
+<section class="story_01 app_style bg_style" v-for="(bgimg, index) in bgs" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center','height': '100%' }" v-if="current == index">
 	
 </section>
 </div>	
@@ -195,7 +184,7 @@ var $=jQuery;$(function(){$("#nav-btn").click(function(){$('#nav-menu').toggleCl
 
             <div class="row align-items-center no-gutters mb-4 mb-lg-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="col-lg-5">
-                    <a href="//event.kkday.com/zh-tw/event/newworld" target="_blank"><img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-1.jpg" alt=""></a>
+                    <a href="//event.kkday.com/zh-tw/event/newworld" target="_blank"><img class="img-fluid lazyload" src="img/loading2.jpg" data-src="img/web-1.jpg" alt=""></a>
                 </div>
                 <div class="col-lg-7">
                     <div class="featured-text-left text-center text-lg-left">
