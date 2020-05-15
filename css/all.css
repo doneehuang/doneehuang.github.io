@@ -117,6 +117,10 @@
 	width: 40%!important;
     left: 30%!important;
 }
+.bg_style{
+	width: 40%!important;
+    left: 30%!important;
+}	
 .button_style{
 	right: 32%!important;
 }	
@@ -773,8 +777,6 @@ outline: none!important;
 
 .bg_style{
 	background-image: url('img/loading.jpg');
-	width: 40%;
-    left: 30%;
     height: 100%;
     position: fixed;
     top: 0em;	
