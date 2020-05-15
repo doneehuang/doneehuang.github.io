@@ -778,6 +778,7 @@ outline: none!important;
 .bg_style{
 	background-image: url(//image.kkday.com/v2/image/get/s1.kkday.com/campaign_1237/20200515043705_2UWBR/jpg);
     height: 100%;
+	width: 100%;
     position: fixed;
     top: 0em;	
 	background-repeat:no-repeat;
