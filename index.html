@@ -91,9 +91,11 @@ var $=jQuery;$(function(){$("#nav-btn").click(function(){$('#nav-menu').toggleCl
 </nav>
 
 <div class="app_bg_style">
-<section class="story_01 app_style bg_style" v-for="(bgimg, index) in bgs" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center','height': '100%' }" v-if="current == index">
+<div class="bg_style">	
+<section class="story_01 app_style" v-for="(bgimg, index) in bgs" :key="index" :style="{'background-image': 'url(' + bgimg + ')','background-repeat':'no-repeat','background-size':'cover','background-position': 'center','height': '100%' }" v-if="current == index">
 	
 </section>
+</div>	
 </div>	
 <button class="storyCloseButton button_style"><i class="fal fa-times"></i></button>	
 </main>	

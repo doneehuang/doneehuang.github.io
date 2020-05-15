@@ -773,6 +773,11 @@ outline: none!important;
 
 .bg_style{
 	background-image: url('img/loading.jpg');
+	width: 40%;
+    left: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0em;	
 }
 .app_bg_style{
 	background:rgba(0,0,0,.8);
