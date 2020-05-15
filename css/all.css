@@ -776,10 +776,13 @@ outline: none!important;
 }
 
 .bg_style{
-	background-image: url('img/loading.jpg');
+	background-image: url(//image.kkday.com/v2/image/get/s1.kkday.com/campaign_1237/20200515043705_2UWBR/jpg);
     height: 100%;
     position: fixed;
     top: 0em;	
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 .app_bg_style{
 	background:rgba(0,0,0,.8);
