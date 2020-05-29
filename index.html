@@ -43,6 +43,15 @@ var $=jQuery;$(function(){$("#nav-btn").click(function(){$('#nav-menu').toggleCl
 
 
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162020016-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162020016-1');
+</script>
 	
 	
 	
@@ -124,7 +133,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Donee Huang</a>
+            <a class="navbar-brand js-scroll-trigger track" href="#page-top" track-value="logo">Donee Huang</a>
 
      <div class="toggle-btn" id="nav-btn">
       <span> </span> 
@@ -135,13 +144,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">關於我</a>
+                        <a class="nav-link js-scroll-trigger track" track-value="head_about" href="#about">關於我</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#projects">作品集</a>
+                        <a class="nav-link js-scroll-trigger track" track-value="head_works" href="#projects">作品集</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">聯絡我</a>
+                        <a class="nav-link js-scroll-trigger track" track-value="head_contact" href="#contact">聯絡我</a>
                     </li>
                 </ul>
             </div>
@@ -151,9 +160,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="nav-menu" id="nav-menu">
    <div class="container">
     <ul class="nav-menu-list">
-     <li class="nav-menu-item"><a class="nav-link nav01 js-scroll-trigger" href="#about"><p class="nav-text">關於我</p></a></li>
-     <li class="nav-menu-item"><a class="nav-link nav02 js-scroll-trigger" href="#projects"><p class="nav-text">作品集</p></a></li>
-     <li class="nav-menu-item"><a class="nav-link nav03 js-scroll-trigger" href="#contact"><p class="nav-text">聯絡我</p></a></li>
+     <li class="nav-menu-item"><a class="nav-link nav01 js-scroll-trigger track" track-value="head_M_about" href="#about"><p class="nav-text">關於我</p></a></li>
+     <li class="nav-menu-item"><a class="nav-link nav02 js-scroll-trigger track" track-value="head_M_works" href="#projects"><p class="nav-text">作品集</p></a></li>
+     <li class="nav-menu-item"><a class="nav-link nav03 js-scroll-trigger track" track-value="head_M_contact" href="#contact"><p class="nav-text">聯絡我</p></a></li>
     </ul>
    </div>
   </div>	
@@ -164,7 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="mx-auto text-center">
                 <h1 class="mx-auto my-0 ">Donee Huang</h1>
                 <h2 class="text-white-50 mx-auto mt-2 mb-5">Web / Graphic / Instagram Filter Designer</h2>
-                <a href="#about" class="btn btn-primary js-scroll-trigger">Hey guys!</a>
+                <a href="#about" class="btn btn-primary js-scroll-trigger track" track-value="hey_guys" >Hey guys!</a>
             </div>
         </div>
     </header>
@@ -203,14 +212,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="row align-items-center no-gutters mb-4 mb-lg-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="col-lg-5">
-                    <a href="//event.kkday.com/zh-tw/event/newworld" target="_blank"><img class="img-fluid lazyload" src="img/loading2.jpg" data-src="img/web-1.jpg" alt=""></a>
+                    <a class="track" track-value="環遊世界頁面_img" href="//event.kkday.com/zh-tw/event/newworld" target="_blank"><img class="img-fluid lazyload" src="img/loading2.jpg" data-src="img/web-1.jpg" alt=""></a>
                 </div>
                 <div class="col-lg-7">
                     <div class="featured-text-left text-center text-lg-left">
 						<h5>Taiwan</h5>
                         <h4>環遊世界 開箱冒險</h4>
                         <p class="text-black-50">為線上旅展建置RWD活動頁面，可點選折扣代碼複製功能、多個國家頁面切換以及Banner內圖案增加動畫</p>
-                            <a class="buttom-more" href="//event.kkday.com/zh-tw/event/newworld" target="_blank">more <i class="fas fa-angle-right"></i></a>
+                            <a class="buttom-more track" track-value="環遊世界_more" href="//event.kkday.com/zh-tw/event/newworld" target="_blank">more <i class="fas fa-angle-right"></i></a>
                         
 
 
@@ -221,14 +230,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="row align-items-center no-gutters mb-4 mb-lg-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="col-lg-5 order-lg-2">
-                    <a href="//event.kkday.com/ko/CNX1month" target="_blank"> <img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-2.jpg" alt=""></a>
+                    <a class="track" track-value="韓國頁面_img" href="//event.kkday.com/ko/CNX1month" target="_blank"> <img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-2.jpg" alt=""></a>
                 </div>	
                 <div class="col-lg-7 order-lg-1">
                     <div class="featured-text-right text-center text-lg-left">
 						<h5>Korea</h5>
                         <h4>해외 한달살기  feat 치앙마이 </h4>
                         <p class="text-black-50">韓國市場試玩員募集，使用webform架設表單填寫功能、填寫後彈跳視窗、增加動畫讓使用者體驗更有趣</p>
-                        <a class="buttom-more" href="//event.kkday.com/ko/CNX1month" target="_blank">more <i class="fas fa-angle-right"></i></a>
+                        <a class="buttom-more track" track-value="韓國頁面_more" href="//event.kkday.com/ko/CNX1month" target="_blank">more <i class="fas fa-angle-right"></i></a>
                     </div>
                 </div>				
             </div>
@@ -238,14 +247,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="row align-items-center no-gutters mb-4 mb-lg-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="col-lg-5">
-                    <a href="//event.kkday.com/ja/event/hanako_collaboration/" target="_blank"> <img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-3.jpg" alt=""></a>
+                    <a class="track" track-value="Hanako頁面_img" href="//event.kkday.com/ja/event/hanako_collaboration/" target="_blank"> <img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-3.jpg" alt=""></a>
                 </div>
                 <div class="col-lg-7">
                     <div class="featured-text-left text-center text-lg-left">
 						<h5>Japan</h5>
                         <h4>Hanako Travel x KKday</h4>
                         <p class="text-black-50">KKday與日本知名雜誌Hanako Travel合作臺灣旅遊，以全版面的Banner設計展現台灣風景，分別製作首頁、臺中頁面、臺南頁面，可分享頁面至Facebook、Twitter並綁定hashtag</p>
-                        <a class="buttom-more" href="//event.kkday.com/ja/event/hanako_collaboration/" target="_blank">more <i class="fas fa-angle-right"></i></a>
+                        <a class="buttom-more track" track-value="Hanako頁面_more" href="//event.kkday.com/ja/event/hanako_collaboration/" target="_blank">more <i class="fas fa-angle-right"></i></a>
 
 
                     </div>
@@ -259,14 +268,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="row align-items-center no-gutters mb-4 mb-lg-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="col-lg-5 order-lg-2">
-                    <a href="//event.kkday.com/ja/event/5yen_year_end" target="_blank"> <img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-4.jpg" alt=""></a>
+                    <a class="track" track-value="五元頁面_img" href="//event.kkday.com/ja/event/5yen_year_end" target="_blank"> <img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-4.jpg" alt=""></a>
                 </div>	
                 <div class="col-lg-7 order-lg-1">
                     <div class="featured-text-right text-center text-lg-left">
 						<h5>Japan</h5>
                         <h4>五円(ご縁)旅行作戦</h4>
                         <p class="text-black-50">日本市場社群分享活動，募集日幣五元與旅遊景點拍照，主視覺利用拍照畫面以及Banner輪播方式呈現活動、活動主要目的為社群推廣故把原本Footer上的SNS移至Header成功增加點擊率</p>
-						<a  class="buttom-more" href="//event.kkday.com/ja/event/5yen_year_end" target="_blank">more <i class="fas fa-angle-right"></i></a>
+						<a  class="buttom-more track" track-value="五元頁面_more" href="//event.kkday.com/ja/event/5yen_year_end" target="_blank">more <i class="fas fa-angle-right"></i></a>
                     </div>
 
                 </div>				
@@ -277,14 +286,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="row align-items-center no-gutters mb-4 mb-lg-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="col-lg-5">
-                    <a href="//event.kkday.com/zh-tw/membership" target="_blank"> <img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-5.jpg" alt=""> </a>
+                    <a class="track" track-value="會員頁面_img" href="//event.kkday.com/zh-tw/membership" target="_blank"> <img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-5.jpg" alt=""> </a>
                 </div>
                 <div class="col-lg-7">
                     <div class="featured-text-left text-center text-lg-left">
 						<h5>Taiwan / Korea / Japan</h5>
                         <h4>KKday會員好禮</h4>
                         <p class="text-black-50">整合KKday會員權益的頁面，新增許願池填寫表單功能，使用Drupal後台並克服無法呈現韓文日文語言，讓三國語言整合在同一份表單並且帶有Source</p>
-						<a  class="buttom-more" href="//event.kkday.com/zh-tw/membership" target="_blank">more <i class="fas fa-angle-right"></i></a>
+						<a  class="buttom-more track" track-value="會員頁面_more"  href="//event.kkday.com/zh-tw/membership" target="_blank">more <i class="fas fa-angle-right"></i></a>
                     </div>
 
                 </div>
@@ -296,20 +305,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row justify-content-center no-gutters mb-5 mb-lg-0 cards-gallery" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="col-lg-6">
                     <div class="circleBackCategory" >
-						<img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-6.jpg" alt="">
+						<img class="img-fluid lazyload track" track-value="視覺設計" src="img/loading.jpg" data-src="img/web-6.jpg" alt="">
 					</div>
-<!--
-					    <a class="lightbox" href="img/gd-1-2.png"></a>
-					    <a class="lightbox" href="img/gd-1-7.png"></a>
-                        <a class="lightbox" href="img/gd-1-3.png"></a>
-			            <a class="lightbox" href="img/gd-1-4.png"></a>
-			            <a class="lightbox" href="img/gd-1-5.png"></a>
-			            <a class="lightbox" href="img/gd-1-6.png"></a>					
-					    <a class="lightbox" href="img/gd-1-8.png"></a>
-					    <a class="lightbox" href="img/gd-1-9.png"></a>					
-			            <a class="lightbox" href="img/gd-1-10.png"></a>				
-                        <a class="lightbox" href="img/gd-1-11.png"></a>
--->
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project">
@@ -331,7 +328,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- Project Two Row -->
             <div class="row justify-content-center no-gutters cards-ig" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <div class="col-lg-6">
-                    <a class="lightbox" href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODUzNzQzNDA3OTMxODIz?igshid=9m0riirt8t0&story_media_id=2281318860601617685" target="_blank"> <img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-7.jpg" alt=""></a>
+                    <a class="lightbox track" track-value="ig濾鏡" href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODUzNzQzNDA3OTMxODIz?igshid=9m0riirt8t0&story_media_id=2281318860601617685" target="_blank"> <img class="img-fluid lazyload" src="img/loading.jpg" data-src="img/web-7.jpg" alt=""></a>
                 </div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="bg-black text-center h-100 project">
@@ -362,16 +359,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <div class="row contact_style">
       <p id="my-form-status"></p>
       <div class="col-md-12 col-sm-12 col-xs-12">
-       <label> <input id="my-form-name" type="text" name="name" required="" placeholder="Your Name" /> </label>
+       <label> <input class="track" track-value="ur_name" id="my-form-name" type="text" name="name" required="" placeholder="Your Name" /> </label>
       </div>
       <div class="col-md-12 col-sm-12 col-xs-12">
-       <label> <input id="my-form-email" type="email" name="_replyto" required="" placeholder="Your Email" /> </label>
+       <label> <input class="track" track-value="ur_email" id="my-form-email" type="email" name="_replyto" required="" placeholder="Your Email" /> </label>
       </div>
       <div class="col-md-12 col-sm-12 col-xs-12">
-       <label> <textarea class="theme-input" id="my-form-message" name="message" required="" placeholder="Message"></textarea> </label>
+       <label> <textarea class="theme-input track" track-value="ur_message" id="my-form-message" name="message" required="" placeholder="Message"></textarea> </label>
       </div>
       <div class="col-md-12 col-sm-12 col-xs-12">
-       <button class="theme-button" type="submit" value="Send" data-toggle="modal" id="my-form-button"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send </button>
+       <button class="theme-button track" track-value="send" type="submit" value="Send" data-toggle="modal" id="my-form-button"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send </button>
       </div>
      </div>
     </form>
@@ -382,7 +379,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="modal-body">
        <p>感謝您的填寫，我將盡快與您聯繫！</p>
        <div class="modal-footer">
-        <button type="button" class="btn btn-info" data-dismiss="modal"> Close </button>
+        <button type="button" class="btn btn-info track" track-value="close" data-dismiss="modal"> Close </button>
        </div>
       </div>
      </div>
@@ -399,10 +396,10 @@ form.addEventListener("submit",function(ev){ev.preventDefault();var data=new For
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50 ">
           <ul class="sns">
-            <li><a href="//www.facebook.com/babehungry/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-			<li><a href="https://www.youtube.com/channel/UCXOfOkhmpUvZMpip8_Fohdw" target="_blank"><i class="fab fa-youtube"></i></a></li>  
-            <li><a href="https://www.instagram.com/babehungry" target="_blank"><i class="fab fa-instagram"></i></a></li>
-			<li><a href="https://www.linkedin.com/in/doneehuang/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>  
+            <li><a class="track" track-value="facebook" href="//www.facebook.com/babehungry/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a class="track" track-value="youtube" href="https://www.youtube.com/channel/UCXOfOkhmpUvZMpip8_Fohdw" target="_blank"><i class="fab fa-youtube"></i></a></li>  
+            <li><a class="track" track-value="instagram" href="https://www.instagram.com/babehungry" target="_blank"><i class="fab fa-instagram"></i></a></li>
+			<li><a class="track" track-value="linkedin" href="https://www.linkedin.com/in/doneehuang/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>  
           </ul>		
         <div class="container ">
             Copyright &copy; Donee Huang 2020
