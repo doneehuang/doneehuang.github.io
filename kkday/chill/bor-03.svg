@@ -3,9 +3,12 @@
 <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#575A6D;stroke-width:3;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#575A6D;stroke-width:3.1758;stroke-miterlimit:10;}
+	.st0{fill:#575A6D;}
 </style>
-<polyline class="st0" points="-116.8,-41.1 28.1,-41.1 28.1,95.1 "/>
-<polyline class="st1" points="-89.8,-75 61.7,-75 61.7,68.1 "/>
+<g>
+	<polygon class="st0" points="33.1,95.1 23.1,95.1 23.1,-36.1 -116.8,-36.1 -116.8,-46.1 33.1,-46.1 	"/>
+</g>
+<g>
+	<polygon class="st0" points="64,70.6 54,70.6 54,-67.6 -92.5,-67.6 -92.5,-77.6 64,-77.6 	"/>
+</g>
 </svg>
