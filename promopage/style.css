@@ -487,6 +487,15 @@ width: 10px;
     section .subtitle {
     font-size: 1.2rem;
     }
+    .product-place {
+    font-size: 1rem;
+    }
+    .product-pricing span {
+    font-size: 1rem;
+    }
+    h4 {
+    font-size: 1.4rem!important;
+    }
 }
 
 
