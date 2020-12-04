@@ -39,6 +39,7 @@ $(function(){
   0: {
     margin: 5,
     items: 1,
+    nav: false,
   },            
   768: {
     items: 2, 
