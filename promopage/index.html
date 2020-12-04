@@ -38,9 +38,10 @@
 	
 	
 	
-		
-	<main class="lazyload banner" data-bg="https://imgur.com/apqSu7A.jpg">
-	</main>	
+	<div v-for="banner in banners">	
+		<main class="lazyload banner" v-bind:data-bg="banner.img">
+		</main>	
+	</div>
 	
 	
 	<section v-for="section in sections" class="product-section" v-bind:id="section.id">

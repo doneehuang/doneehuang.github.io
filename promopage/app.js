@@ -1,4 +1,10 @@
 
+var bannerdatas=[
+	{
+	  img: "https://i.imgur.com/apqSu7A.jpg",
+	}
+  ];
+
 var sectiondatas=[
   {
 	id:"product_1",
@@ -505,8 +511,10 @@ var flowchartdatas=[
 var vm = new Vue({
   el: "#app",
   data: {
+	banners: bannerdatas,  
 	sections: sectiondatas,
 	flowcharts: flowchartdatas,
+
   }
 });
 
