@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ＴＥＳＴ</title>
+<link type="text/css" rel="stylesheet" href="style.css"/>
+<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>	
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>	
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>	
+<script>
+
+</script>		
+</head>
+
+	
+<header class="header">
+	<div class="container">
+		<div class="header-logo"><a href="https://www.kkday.com/zh-tw/"><img src="https://cdn.kkday.com/pc-web/assets/img/kkday_logo_final.svg" alt="logo"></a></div>
+	</div>	
+</header>	
+<main id="app">
+	
+<div id="navbarResponsive" class="navbar-collapse">
+	<div class="container tab-overflow">
+		<ul class="navbar-nav">
+			<li v-for="section in sections"><a  class="nav-link js-scroll-trigger more" v-bind:href="'#' + section.id"><span>{{section.maintitle}}</span></a></li>			
+		</ul>
+	</div>
+</div>	
+	
+	
+	
+	
+<main class="lazyload banner" data-bg="https://imgur.com/apqSu7A.jpg"></main>	
+	
+	
+	<section v-for="section in sections" class="product-section" v-bind:id="section.id">
+		<div class="section-bg" v-bind:style="{ backgroundColor: section.backgroundColor}">
+			<div class="container">
+				<div class="section-head">
+					<h2 class="title">
+						{{section.maintitle}}
+					</h2> 
+					<p class="subtitle">
+						{{section.subtitle}}
+					</p>
+				</div>		
+				<div class="owl-carousel owl-four">					
+					<div class="item" v-for="productcard in section.productcards">
+						<a v-bind:href="productcard.url" target="_blank" data-check-cid="1">
+							<div class="card-product" v-bind:style="{ backgroundColor: section.productcards_backgroundColor}">
+										<div class="pic lazyload" v-bind:data-bg="productcard.img">										
+										</div>
+								<div class="product-detail">
+									<h3 class="title-card">
+										{{productcard.name.substring(0,25)+"..."}}
+									</h3>
+									<div class="product-place">
+										<i class="fas fa-map-marker-alt"></i> {{productcard.location}}
+									</div> 
+									<div class="product-footer">
+
+
+	<!--
+										<div class="product-star">
+											<div class="kk-icon star star-100"></div>
+											<div class="kk-icon star star-100"></div>
+											<div class="kk-icon star star-100"></div>
+											<div class="kk-icon star star-100"></div>
+											<div class="kk-icon star star-75"></div> 
+											<span class="text-grey-light">(7709)</span>
+										</div>
+	-->
+
+
+										<div class="product-pricing">
+											<span>TWD</span> <h4>{{productcard.price}}</h4>
+										</div>
+									</div> 
+								</div>
+							</div>
+							<div  v-if="productcard.tag">
+								<div class="promo-product__label_before" v-bind:style="{ backgroundColor: section.tag_backgroundColor}">
+								</div>							
+								<div class="promo-product__label" v-bind:style="{ backgroundColor: section.tag_backgroundColor,color:section.tagColor}">
+									{{productcard.tag}}
+								</div>
+							</div>	
+						</a>
+					</div>											
+				</div>		
+			</div>
+		</div>	
+	</section>	
+</main>	
+<script src="main.js"></script>		
+<script src="app.js"></script>	
+<script>
+$('body').scrollspy({
+target: '.navbar-collapse',
+})
+</script>
+
+<body>
+</body>			
+	
+</html>
