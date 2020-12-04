@@ -142,6 +142,7 @@ header {
 	font-weight: 700;
 }
 .navbar-collapse {
+    transition: .3s;
     display:none;
     position: fixed;
     top: 0;
@@ -453,6 +454,25 @@ width: 10px;
 }
 */
 /*card END*/
+
+/*注意事項 START*/
+.flowchart_description {
+    background: #f4f4f4;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.flowchart_description .title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.flowchart_description .description_list {
+    font-size: .9rem;
+    padding-inline-start: 25px;
+    line-height:30px;
+    word-wrap: break-word;
+}
+/*注意事項 END*/
 @media (max-width: 990px){	
 	.owl-stage-outer {
 		padding: 28px 0px;

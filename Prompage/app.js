@@ -480,10 +480,33 @@ var sectiondatas=[
   }
 ];
 
+
+var flowchartdatas=[
+  {
+    name: "注意事項",
+	lists:[
+		{
+         title:"產品價格可能因即時匯率與季節而變動，請以實際訂購時的結帳金額為準",
+		},
+		{
+         title:"KKday得保留修改、變更本活動內容或提前終止本活動之權利，KKday對本活動所有事宜有最終解釋及決定權利。",
+		},
+		{
+         title:"行程類商品KKday將於收到您的訂單後，於指定工作日回覆您訂購結果，如因額滿或是不可抗力之因素導致無法成行，將會由客服人員與您通知。",
+		},
+		
+		
+	]
+  }
+];
+
+
+
 var vm = new Vue({
   el: "#app",
   data: {
-	sections: sectiondatas,  
+	sections: sectiondatas,
+	flowcharts: flowchartdatas,
   }
 });
 

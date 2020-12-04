@@ -27,18 +27,19 @@
 </header>	
 <main id="app">
 	
-<div id="navbarResponsive" class="navbar-collapse">
-	<div class="container tab-overflow">
-		<ul class="navbar-nav">
-			<li v-for="section in sections"><a  class="nav-link js-scroll-trigger more" v-bind:href="'#' + section.id"><span>{{section.maintitle}}</span></a></li>			
-		</ul>
-	</div>
-</div>	
+	<div id="navbarResponsive" class="navbar-collapse">
+		<div class="container tab-overflow">
+			<ul class="navbar-nav">
+				<li v-for="section in sections"><a  class="nav-link js-scroll-trigger more" v-bind:href="'#' + section.id"><span>{{section.maintitle}}</span></a></li>			
+			</ul>
+		</div>
+	</div>	
 	
 	
 	
-	
-<main class="lazyload banner" data-bg="https://imgur.com/apqSu7A.jpg"></main>	
+		
+	<main class="lazyload banner" data-bg="https://imgur.com/apqSu7A.jpg">
+	</main>	
 	
 	
 	<section v-for="section in sections" class="product-section" v-bind:id="section.id">
@@ -99,6 +100,20 @@
 			</div>
 		</div>	
 	</section>	
+
+	<main class="flowchart_description"  v-for="flowchart in flowcharts">
+		<div class="container">
+			<h2 class="title">
+						{{flowchart.name}}
+			</h2> 
+			<ul class="description_list">
+				<li v-for="list in flowchart.lists">
+					{{list.title}}
+				</li>
+			</ul>
+		</div>
+	</main>
+
 </main>	
 <script src="main.js"></script>		
 <script src="app.js"></script>	

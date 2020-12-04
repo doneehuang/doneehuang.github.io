@@ -4,9 +4,9 @@ $(window).on("scroll", function () {
   var $window = $(window).scrollTop();
   var bannerOffset = $(".banner").outerHeight(true)-40;
   if ($window > bannerOffset) {
-    $(".navbar-collapse").addClass("active"),300;	
+    $(".navbar-collapse").addClass("active"),1000;	
   } else {		
-    $(".navbar-collapse").removeClass("active"),300;		
+    $(".navbar-collapse").removeClass("active"),1000;		
   }
 });
 // lazy bg
