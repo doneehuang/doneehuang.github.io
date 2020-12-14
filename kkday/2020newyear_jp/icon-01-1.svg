@@ -8,7 +8,7 @@
 	.st2{fill:#DDB443;}
 	.st3{fill:none;stroke:#000000;stroke-width:1.2465;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st4{fill:#231815;}
-	.st5{fill:#BC8D24;stroke:#231815;stroke-width:1.498;stroke-miterlimit:10;}
+	.st5{fill:#BC8D24;stroke:#231815;stroke-width:1.498;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g>
 	<path class="st0" d="M147.6,91.8c-1.5-5.7-3.6-11.3-6.1-16.6c-4.6-9.9-11.4-19.7-21.6-24.5c-11.6-5.4-21.2-6.5-33.4-5.6
