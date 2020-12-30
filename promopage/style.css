@@ -193,6 +193,24 @@ header {
 }
 /*banner END*/
 
+/*section tab START*/
+.nav {
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    margin: 0 5px;
+}
+.nav-pills .nav-link {
+    font-weight: bold;
+    color: #212529 !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #212529 !important;
+    background-color: #f7f0ea !important;
+}
+/*section tab END*/
+
 /*section START*/
 section {
     margin-bottom: 0px;

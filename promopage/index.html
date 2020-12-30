@@ -43,6 +43,28 @@
 		</main>	
 	</div>
 	
+	<!-- <section style="background-color: #9797A5;">
+		<div class="container">
+			<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+				<li class="nav-item">
+				<a class="nav-link active" data-toggle="pill" href="#pills-home" role="tab">北部</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" data-toggle="pill" href="#pills-profile" role="tab">中部</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" data-toggle="pill" href="#pills-contact" role="tab">南部</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-home" role="tabpanel">page1</div>
+				<div class="tab-pane fade" id="pills-profile" role="tabpanel">page2</div>
+				<div class="tab-pane fade" id="pills-contact" role="tabpanel">page3</div>
+			</div>
+		</div>	  		
+    </section>	 -->
+
+
 	
 	<section v-for="section in sections" class="product-section" v-bind:id="section.id">
 		<div class="section-bg" v-bind:style="{ background: section.backgroundColor}">
@@ -55,6 +77,22 @@
 						{{section.subtitle}}
 					</p>
 				</div>		
+
+
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+					<li class="nav-item" v-for="tab in section.tabs">
+						<a v-bind:class=" {active: tab.defult}" class="nav-link" data-toggle="pill" v-bind:href="'#' + tab.tabId" role="tab"> {{tab.tabname}} {{tab.defult}}</a>
+					</li>
+
+				</ul>
+
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active" id="tab01" role="tabpanel">page1</div>
+					<div class="tab-pane fade" id="tab02" role="tabpanel">page2</div>
+					<div class="tab-pane fade" id="tab03" role="tabpanel">page3</div>
+				</div>
+
+
 				<div class="owl-carousel owl-four">					
 					<div class="item" v-for="productcard in section.productcards">
 						<a v-bind:href="productcard.url" target="_blank" data-check-cid="1">
@@ -71,16 +109,6 @@
 									<div class="product-footer">
 
 
-	<!--
-										<div class="product-star">
-											<div class="kk-icon star star-100"></div>
-											<div class="kk-icon star star-100"></div>
-											<div class="kk-icon star star-100"></div>
-											<div class="kk-icon star star-100"></div>
-											<div class="kk-icon star star-75"></div> 
-											<span class="text-grey-light">(7709)</span>
-										</div>
-	-->
 
 
 										<div class="product-pricing">
