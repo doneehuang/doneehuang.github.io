@@ -8,7 +8,7 @@ var bannerdatas=[
 var sectiondatas=[
   {
 	id:"product_1",
-	backgroundColor:"#9797A5",  
+	backgroundColor:"url('https://image.kkday.com/v2/image/get/s1.kkday.com/campaign_1442/20201228082019_DbLRA/png')50% 20% / cover no-repeat,#9797A5",  
     maintitle:"🔥限時促銷 酒店度假風",
 	subtitle:"五星主管套房 下殺3折起",
 	tag_backgroundColor:"#F7EFE9", 	

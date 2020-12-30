@@ -1,5 +1,8 @@
 var $=jQuery; 
-// navbar 
+// navbar
+$('body').scrollspy({
+  target: '.navbar-collapse',
+  })
 $(window).on("scroll", function () {
   var $window = $(window).scrollTop();
   var bannerOffset = $(".banner").outerHeight(true)-40;

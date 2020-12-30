@@ -45,7 +45,7 @@
 	
 	
 	<section v-for="section in sections" class="product-section" v-bind:id="section.id">
-		<div class="section-bg" v-bind:style="{ backgroundColor: section.backgroundColor}">
+		<div class="section-bg" v-bind:style="{ background: section.backgroundColor}">
 			<div class="container">
 				<div class="section-head">
 					<h2 class="title">
@@ -119,12 +119,6 @@
 </main>	
 <script src="main.js"></script>		
 <script src="app.js"></script>	
-<script>
-$('body').scrollspy({
-target: '.navbar-collapse',
-})
-</script>
-
 <body>
 </body>			
 	
