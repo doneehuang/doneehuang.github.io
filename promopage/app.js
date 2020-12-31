@@ -1,7 +1,7 @@
 
 var bannerdatas=[
 	{
-	  img: "https://i.imgur.com/apqSu7A.jpg",
+	  img: "https://image.kkday.com/v2/image/get/s1.kkday.com/campaign_1442/20201231063715_O2XA8/jpg",
 	}
   ];
 
@@ -185,7 +185,7 @@ var sectiondatas=[
 	],  
   },{  
 	id:"product_2",  
-	backgroundColor:"url('https:/image.kkday.com/v2/image/get/s1.kkday.com/campaign_1442/20201231024307_a4zUU/png')50% 20% / cover no-repeat,#7D7D8E",  	
+	backgroundColor:"url('https://image.kkday.com/v2/image/get/s1.kkday.com/campaign_1442/20201231062318_V7BqR/png')50% 20% / cover no-repeat,#7D7D8E",  	
 	maintitle:"整個城市 陪我一起入睡",
 	subtitle:"五星主管套房 下殺3折起",	
 	tag_backgroundColor:"#F7EFE9", 	
@@ -250,12 +250,14 @@ var sectiondatas=[
 				}		
 			] 
 		}
-	],	  	  
+	] 
   },{
 	id:"product_3",  
 	backgroundColor:"url('https://image.kkday.com/v2/image/get/s1.kkday.com/campaign_1442/20201231024038_gSmkY/png')50% 20% / cover no-repeat,#9797A5",  
 	maintitle:"天冷泡湯 嚴選溫泉",	 
-	subtitle:"五星主管套房 下殺3折起",	 
+	subtitle:"五星主管套房 下殺3折起",	
+	tag_backgroundColor:"#F7EFE9", 	
+	tagColor:"#8C2324",  	 
 	productcards_backgroundColor:"#fff",  
 	tabs:[
 		{
@@ -428,10 +430,11 @@ var sectiondatas=[
 ], 		  
   },{
 	id:"product_4",  
-	backgroundColor:"url('https:/image.kkday.com/v2/image/get/s1.kkday.com/campaign_1442/20201231024307_a4zUU/png')50% 20% / cover no-repeat,#7D7D8E",  
+	backgroundColor:"url('https://image.kkday.com/v2/image/get/s1.kkday.com/campaign_1442/20201231062318_V7BqR/png')50% 20% / cover no-repeat,#7D7D8E", 
 	maintitle:"文青旅行 風格旅宿",
 	subtitle:"五星主管套房 下殺3折起",	
-	tag_backgroundColor:"#F7EFE9", 		  
+	tag_backgroundColor:"#F7EFE9", 	
+	tagColor:"#8C2324",  	  
 	productcards_backgroundColor:"#fff", 
 	hidetab:true,	  
 	tabs:[
@@ -672,7 +675,7 @@ var sectiondatas=[
 ],  
   },{
 	id:"product_6",
-	backgroundColor:"url('https:/image.kkday.com/v2/image/get/s1.kkday.com/campaign_1442/20201231024307_a4zUU/png')50% 20% / cover no-repeat,#7D7D8E",  
+	backgroundColor:"url('https://image.kkday.com/v2/image/get/s1.kkday.com/campaign_1442/20201231062318_V7BqR/png')50% 20% / cover no-repeat,#7D7D8E", 
 	maintitle:"高鐵假期 這樣玩最划算",
 	subtitle:"五星主管套房 下殺3折起",	
 	tag_backgroundColor:"#F7EFE9", 	
@@ -917,7 +920,7 @@ var sectiondatas=[
 ],  
   },{
 	id:"product_8",
-	backgroundColor:"url('https:/image.kkday.com/v2/image/get/s1.kkday.com/campaign_1442/20201231024307_a4zUU/png')50% 20% / cover no-repeat,#7D7D8E",  
+	backgroundColor:"url('https://image.kkday.com/v2/image/get/s1.kkday.com/campaign_1442/20201231062318_V7BqR/png')50% 20% / cover no-repeat,#7D7D8E",
 	maintitle:"台灣北部｜宜蘭＆桃園景點",
 	subtitle:"五星主管套房 下殺3折起",	
 	tag_backgroundColor:"#F7EFE9", 	
