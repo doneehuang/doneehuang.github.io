@@ -221,6 +221,7 @@ header {
     font-weight: 500;
     border-radius: 100px !important;
     padding: 2px 12px;
+    margin: 2px 12px;
     color: #212529 !important;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
