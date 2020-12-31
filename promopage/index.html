@@ -11,8 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>	
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>	
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>	
 <script>
@@ -43,26 +43,6 @@
 		</main>	
 	</div>
 	
-	<!-- <section style="background-color: #9797A5;">
-		<div class="container">
-			<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-				<li class="nav-item">
-				<a class="nav-link active" data-toggle="pill" href="#pills-home" role="tab">北部</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" data-toggle="pill" href="#pills-profile" role="tab">中部</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" data-toggle="pill" href="#pills-contact" role="tab">南部</a>
-				</li>
-			</ul>
-			<div class="tab-content" id="pills-tabContent">
-				<div class="tab-pane fade show active" id="pills-home" role="tabpanel">page1</div>
-				<div class="tab-pane fade" id="pills-profile" role="tabpanel">page2</div>
-				<div class="tab-pane fade" id="pills-contact" role="tabpanel">page3</div>
-			</div>
-		</div>	  		
-    </section>	 -->
 
 
 	
@@ -79,54 +59,54 @@
 				</div>		
 
 
-				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" v-bind:class=" {active: section.hidetab,show: section.hidetab}">
 					<li class="nav-item" v-for="tab in section.tabs">
-						<a v-bind:class=" {active: tab.defult}" class="nav-link" data-toggle="pill" v-bind:href="'#' + tab.tabId" role="tab"> {{tab.tabname}} {{tab.defult}}</a>
+						<a v-bind:class=" {active: tab.defult}" class="nav-link" data-toggle="tab" v-bind:href="'#' + tab.tabId" role="tab"> {{tab.tabname}}</a>
 					</li>
 
 				</ul>
 
 				<div class="tab-content" id="pills-tabContent">
-					<div class="tab-pane fade show active" id="tab01" role="tabpanel">page1</div>
-					<div class="tab-pane fade" id="tab02" role="tabpanel">page2</div>
-					<div class="tab-pane fade" id="tab03" role="tabpanel">page3</div>
-				</div>
+					<div v-for="tab in section.tabs" class="tab-pane fade" v-bind:class=" {active: tab.defult,show: tab.defult}" v-bind:id="tab.tabId" role="tabpanel">
 
-
-				<div class="owl-carousel owl-four">					
-					<div class="item" v-for="productcard in section.productcards">
-						<a v-bind:href="productcard.url" target="_blank" data-check-cid="1">
-							<div class="card-product" v-bind:style="{ backgroundColor: section.productcards_backgroundColor}">
-										<div class="pic lazyload" v-bind:data-bg="productcard.img">										
+						<div class="owl-carousel owl-four">					
+							<div class="item" v-for="productcard in tab.productcards">
+								<a v-bind:href="productcard.url" target="_blank" data-check-cid="1">
+									<div class="card-product" v-bind:style="{ backgroundColor: section.productcards_backgroundColor}">
+												<div class="pic lazyload" v-bind:data-bg="productcard.img">										
+												</div>
+										<div class="product-detail">
+											<h3 class="title-card">
+												{{productcard.name}}
+											</h3>
+											<div class="product-place">
+												<i class="fas fa-map-marker-alt"></i> {{productcard.location}}
+											</div> 
+											<div class="product-footer">
+		
+		
+		
+		
+												<div class="product-pricing">
+													<span>TWD</span> <h4>{{productcard.price}}</h4>
+												</div>
+											</div> 
 										</div>
-								<div class="product-detail">
-									<h3 class="title-card">
-										{{productcard.name}}
-									</h3>
-									<div class="product-place">
-										<i class="fas fa-map-marker-alt"></i> {{productcard.location}}
-									</div> 
-									<div class="product-footer">
-
-
-
-
-										<div class="product-pricing">
-											<span>TWD</span> <h4>{{productcard.price}}</h4>
+									</div>
+									<div  v-if="productcard.tag">
+										<div class="promo-product__label_before" v-bind:style="{ backgroundColor: section.tag_backgroundColor}">
+										</div>							
+										<div class="promo-product__label" v-bind:style="{ backgroundColor: section.tag_backgroundColor,color:section.tagColor}">
+											{{productcard.tag}}
 										</div>
-									</div> 
-								</div>
-							</div>
-							<div  v-if="productcard.tag">
-								<div class="promo-product__label_before" v-bind:style="{ backgroundColor: section.tag_backgroundColor}">
-								</div>							
-								<div class="promo-product__label" v-bind:style="{ backgroundColor: section.tag_backgroundColor,color:section.tagColor}">
-									{{productcard.tag}}
-								</div>
-							</div>	
-						</a>
-					</div>											
-				</div>		
+									</div>	
+								</a>
+							</div>											
+						</div>							
+
+
+					</div>
+				</div>	
 			</div>
 		</div>	
 	</section>	

@@ -194,6 +194,18 @@ header {
 /*banner END*/
 
 /*section tab START*/
+
+.tab-content > .tab-pane {
+    visibility: hidden;
+    height: 0px;
+    overflow:hidden;
+}
+.tab-content > .active {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+}
+
 .nav {
     justify-content: center;
     align-items: center;
@@ -201,12 +213,18 @@ header {
 .nav-item{
     margin: 0 5px;
 }
+.nav-pills.active {
+    display: none;
+}
 .nav-pills .nav-link {
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 100px !important;
+    padding: 2px 12px;
     color: #212529 !important;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #212529 !important;
+    color: #b24242 !important;
     background-color: #f7f0ea !important;
 }
 /*section tab END*/
@@ -376,7 +394,7 @@ h4 {
 }
 .owl-stage-outer {
     padding: 28px 10px;
-    margin: -28px -10px;
+    margin: 0 -10px;
 }
 .owl-nav button[class*=owl-] i {
     color: #4F4F4F;
