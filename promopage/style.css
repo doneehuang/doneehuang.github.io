@@ -64,7 +64,20 @@ header {
 /*header END*/
 
 /*navbar START*/
-
+.tab-overflow:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    content: "";
+    background: -moz-linear-gradient(left,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 10%,#fff 90%,#fff 100%);
+    background: -webkit-linear-gradient(left,hsla(0,0%,100%,0),hsla(0,0%,100%,0) 10%,#fff 90%,#fff);
+    background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,0) 10%,#fff 90%,#fff);
+    width: 80px;
+    height: 45px;
+    z-index: 9;
+    opacity: 1;
+}
 .tab-overflow{
   align-items: flex-end;
   flex-direction: column-reverse;	
@@ -81,7 +94,7 @@ header {
 .navbar-nav li{
 	float: none;
 	display: inline-block; 
-	margin-right: 35px;
+	margin-right: 25px;
 	
 }
 
@@ -489,6 +502,9 @@ width: 10px;
 	}
 }
 @media (max-width: 767px){	
+    .navbar-nav li {
+        margin-right: 20px !important;
+    }  
 	.owl-stage-outer {
 		padding: 28px 13px;
 		margin: -28px -13px;
